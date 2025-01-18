@@ -93,7 +93,101 @@
 }
 
 
+.nav2{
+    background-color:rgba(255, 255, 255, 0.5);
+    color: #252323;
+   display: flex;
 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar2-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin:  auto;
+}
+
+.logo1 img {
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 400px;
+}
+
+.sbar img {
+    height: 40px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.cart img {
+    height: 40px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.menu img {
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 15px;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+.nav-links img {
+    height: 16px;
+    vertical-align: middle;
+}
+
+
+/* Responsive Media Query */
+@media (max-width: 768px) {
+    /* Hide navbar on mobile view */
+    .navbar {
+        display: none;
+    }
+
+    /* Show nav2 only on mobile view */
+    .nav2 {
+        display: flex;
+    }
+}
+
+@media (min-width: 769px) {
+    /* Hide nav2 on desktop view */
+    .nav2 {
+        display: none;
+    }
+
+    /* Show navbar only on desktop */
+    .navbar {
+        display: flex;
+    }
+}
 
 /* Fix hero section background images */
 
