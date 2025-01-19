@@ -1,0 +1,147 @@
+.navbar {
+    background-color:rgba(255, 255, 255, 0.5);
+    color: #252323;
+   display: flex;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin:  auto;
+}
+
+.logo img {
+    height: 40px;
+    vertical-align: middle;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+.nav-links img {
+    height: 16px;
+    vertical-align: middle;
+}
+
+/* Styles for 2nd Navbar */
+.nav2 {
+    background-color: #f9f9f9; /* Light gray background */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 20px; /* Add padding for spacing */
+    border-bottom: 1px solid #e0e0e0; /* Light border for separation */
+    width: 100%;
+}
+
+.navbar2-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Restrict width for larger screens */
+    margin: auto; /* Center the navbar */
+}
+
+/* Logo styling */
+.logo1 img {
+    height: 24px; /* Match the logo height */
+    vertical-align: middle;
+    margin-right: 80px; /* Push other items to the right */
+}
+
+/* Icon styling */
+.sbar img,
+.cart img,
+.menu img {
+    height: 20px; /* Adjust the icon size */
+    margin-left: 10px; /* Add spacing between icons */
+    cursor: pointer; /* Pointer cursor for interactive elements */
+}
+
+/* Hide unused links in navbar2 */
+.navbar2-container a:not(.logo1):not(.sbar):not(.cart):not(.menu) {
+    display: none; /* Hide empty anchor tags */
+}
+
+
+/* Desktop View (769px and above) */
+@media (min-width: 769px) {
+    .navbar {
+        display: flex; /* Show 1st navbar */
+    }
+
+    .nav2 {
+        display: none; /* Hide 2nd navbar */
+    }
+}
+
+/* Mobile and Tablet View (Below 769px) */
+@media (max-width: 768px) {
+    .navbar {
+        display: none; /* Hide 1st navbar */
+    }
+
+    .nav2 {
+        display: flex; /* Show 2nd navbar */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar2-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+
+    .logo1 img {
+        height: 30px; /* Adjust logo size */
+        margin-right:450px;
+    }
+
+    .sbar img,
+    .cart img,
+    .menu img {
+        height: 25px; /* Adjust icon size for mobile */
+        margin-left: 5px;
+    }
+}
+
+body {
+    font-family: 'SF Pro Display', sans-serif;
+    background-color: #F5F5F5;
+    margin: 0;
+    display: flex   ;
+    flex-direction: column;
+    align-items: center;
+}

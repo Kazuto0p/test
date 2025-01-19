@@ -166,7 +166,7 @@
 
 /* Responsive Media Query */
 /* Responsive Media Query */
-@media (max-width: 768px) {
+@media (min-width:440px) and (max-width: 768px) {
     /* Hide navbar on mobile view */
     .navbar {
         display: none;
@@ -178,7 +178,7 @@
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 769px) and (max-width:1400px) {
     /* Hide nav2 on desktop view */
     .nav2 {
         display: none;
